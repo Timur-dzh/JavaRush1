@@ -1,13 +1,13 @@
 package com.javarush.test.level05.lesson07.task02;
 
-/* Создать класс Cat
-Создать класс Cat (кот) с пятью инициализаторами:
-- Имя,
-- Имя, вес, возраст
-- Имя, возраст (вес стандартный)
-- вес, цвет, (имя, адрес и возраст неизвестны, это бездомный кот)
-- вес, цвет, адрес ( чужой домашний кот)
-Задача инициализатора – сделать объект валидным. Например, если вес неизвестен, то нужно указать какой-нибудь средний вес. Кот не может ничего не весить. То же касательно возраста. А вот имени может и не быть (null). То же касается адреса: null.
+/* РЎРѕР·РґР°С‚СЊ РєР»Р°СЃСЃ Cat
+РЎРѕР·РґР°С‚СЊ РєР»Р°СЃСЃ Cat (РєРѕС‚) СЃ РїСЏС‚СЊСЋ РёРЅРёС†РёР°Р»РёР·Р°С‚РѕСЂР°РјРё:
+- РРјСЏ,
+- РРјСЏ, РІРµСЃ, РІРѕР·СЂР°СЃС‚
+- РРјСЏ, РІРѕР·СЂР°СЃС‚ (РІРµСЃ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Р№)
+- РІРµСЃ, С†РІРµС‚, (РёРјСЏ, Р°РґСЂРµСЃ Рё РІРѕР·СЂР°СЃС‚ РЅРµРёР·РІРµСЃС‚РЅС‹, СЌС‚Рѕ Р±РµР·РґРѕРјРЅС‹Р№ РєРѕС‚)
+- РІРµСЃ, С†РІРµС‚, Р°РґСЂРµСЃ ( С‡СѓР¶РѕР№ РґРѕРјР°С€РЅРёР№ РєРѕС‚)
+Р—Р°РґР°С‡Р° РёРЅРёС†РёР°Р»РёР·Р°С‚РѕСЂР° вЂ“ СЃРґРµР»Р°С‚СЊ РѕР±СЉРµРєС‚ РІР°Р»РёРґРЅС‹Рј. РќР°РїСЂРёРјРµСЂ, РµСЃР»Рё РІРµСЃ РЅРµРёР·РІРµСЃС‚РµРЅ, С‚Рѕ РЅСѓР¶РЅРѕ СѓРєР°Р·Р°С‚СЊ РєР°РєРѕР№-РЅРёР±СѓРґСЊ СЃСЂРµРґРЅРёР№ РІРµСЃ. РљРѕС‚ РЅРµ РјРѕР¶РµС‚ РЅРёС‡РµРіРѕ РЅРµ РІРµСЃРёС‚СЊ. РўРѕ Р¶Рµ РєР°СЃР°С‚РµР»СЊРЅРѕ РІРѕР·СЂР°СЃС‚Р°. Рђ РІРѕС‚ РёРјРµРЅРё РјРѕР¶РµС‚ Рё РЅРµ Р±С‹С‚СЊ (null). РўРѕ Р¶Рµ РєР°СЃР°РµС‚СЃСЏ Р°РґСЂРµСЃР°: null.
 */
 
 public class Cat
@@ -18,29 +18,29 @@ public class Cat
     private int age = 0;
     private String address = null;
     
-    public void initialize(String name) //имя 
+    public void initialize(String name) //РёРјСЏ 
     {
         this.name = name;
     }
-    public void initialize(String name, int weight, int age) //имя вес возраст
+    public void initialize(String name, int weight, int age) //РёРјСЏ РІРµСЃ РІРѕР·СЂР°СЃС‚
     {
         this.name = name;
         this.age = age;
         this.weight = weight;
     }
-       public void initialize(String name,  int age) //имя возраст
+       public void initialize(String name,  int age) //РёРјСЏ РІРѕР·СЂР°СЃС‚
     {
         this.name = name;
         this.age = age;
         this.weight = 2;
     }
-    public void initialize(int weight,  String color) //вес цвет
+    public void initialize(int weight,  String color) //РІРµСЃ С†РІРµС‚
     {
         this.weight = weight;
         this.color = color;
         
     }
-  public void initialize(int weight,  String color, String address) //вес цвет
+  public void initialize(int weight,  String color, String address) //РІРµСЃ С†РІРµС‚
     {
         this.weight = weight;
         this.color = color;
