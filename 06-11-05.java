@@ -1,10 +1,10 @@
 package com.javarush.test.level06.lesson11.home05;
 
-/* Есть новые идеи? Подумаем...
-1. В классе Solution создать public статический класс Idea
-2. В классе Idea создать метод public String getDescription(), который будет возвращать любой непустой текст
-3. В классе Solution создайте статический метод public void printIdea(Idea idea), который будет выводить
-на экран описание идеи - это то, что возвращает метод getDescription
+/* Р•СЃС‚СЊ РЅРѕРІС‹Рµ РёРґРµРё? РџРѕРґСѓРјР°РµРј...
+1. Р’ РєР»Р°СЃСЃРµ Solution СЃРѕР·РґР°С‚СЊ public СЃС‚Р°С‚РёС‡РµСЃРєРёР№ РєР»Р°СЃСЃ Idea
+2. Р’ РєР»Р°СЃСЃРµ Idea СЃРѕР·РґР°С‚СЊ РјРµС‚РѕРґ public String getDescription(), РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ РІРѕР·РІСЂР°С‰Р°С‚СЊ Р»СЋР±РѕР№ РЅРµРїСѓСЃС‚РѕР№ С‚РµРєСЃС‚
+3. Р’ РєР»Р°СЃСЃРµ Solution СЃРѕР·РґР°Р№С‚Рµ СЃС‚Р°С‚РёС‡РµСЃРєРёР№ РјРµС‚РѕРґ public void printIdea(Idea idea), РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ РІС‹РІРѕРґРёС‚СЊ
+РЅР° СЌРєСЂР°РЅ РѕРїРёСЃР°РЅРёРµ РёРґРµРё - СЌС‚Рѕ С‚Рѕ, С‡С‚Рѕ РІРѕР·РІСЂР°С‰Р°РµС‚ РјРµС‚РѕРґ getDescription
 */
 
 public class Solution
@@ -18,7 +18,7 @@ public class Solution
     {
         public String getDescription()
         {return "Hello";}
-    }//Добавьте тут класс Idea
+    }//Р”РѕР±Р°РІСЊС‚Рµ С‚СѓС‚ РєР»Р°СЃСЃ Idea
 
     public static void printIdea(Idea idea)
     {

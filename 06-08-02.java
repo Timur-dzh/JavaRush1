@@ -1,7 +1,7 @@
 package com.javarush.test.level06.lesson08.task02;
 
-/* Статические методы: int getCatCount() и setCatCount(int)
-Добавить  к классу Cat два статических метода: int getCatCount() и setCatCount(int), с помощью которых можно получить/изменить количество котов (переменную catCount)
+/* РЎС‚Р°С‚РёС‡РµСЃРєРёРµ РјРµС‚РѕРґС‹: int getCatCount() Рё setCatCount(int)
+Р”РѕР±Р°РІРёС‚СЊ  Рє РєР»Р°СЃСЃСѓ Cat РґРІР° СЃС‚Р°С‚РёС‡РµСЃРєРёС… РјРµС‚РѕРґР°: int getCatCount() Рё setCatCount(int), СЃ РїРѕРјРѕС‰СЊСЋ РєРѕС‚РѕСЂС‹С… РјРѕР¶РЅРѕ РїРѕР»СѓС‡РёС‚СЊ/РёР·РјРµРЅРёС‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ РєРѕС‚РѕРІ (РїРµСЂРµРјРµРЅРЅСѓСЋ catCount)
 */
 
 public class Cat
@@ -15,13 +15,13 @@ public class Cat
 
     public static int getCatCount()
     {
-        return catCount;//напишите тут ваш код
+        return catCount;//РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
 
     }
 
     public static void setCatCount(int catCount)
     {
-        Cat.catCount=catCount;//напишите тут ваш код
+        Cat.catCount=catCount;//РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
 
     }
 }

@@ -3,13 +3,13 @@ package com.javarush.test.level06.lesson08.task04;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-/* Класс ConsoleReader
-Сделать класс ConsoleReader, у которого будут 4 статических метода:
-String readString() – читает с клавиатуры строку
-int readInt() – читает с клавиатуры число
-double readDouble() – читает с клавиатуры дробное число
-boolean readBoolean() – читает с клавиатуры строку "true" или "false" и возвращает соответствующую логическую переменную true или false
-Внимание: создавайте переменную для чтения данных с консоли (BufferedReader или Scanner) внутри каждого метода
+/* РљР»Р°СЃСЃ ConsoleReader
+РЎРґРµР»Р°С‚СЊ РєР»Р°СЃСЃ ConsoleReader, Сѓ РєРѕС‚РѕСЂРѕРіРѕ Р±СѓРґСѓС‚ 4 СЃС‚Р°С‚РёС‡РµСЃРєРёС… РјРµС‚РѕРґР°:
+String readString() вЂ“ С‡РёС‚Р°РµС‚ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹ СЃС‚СЂРѕРєСѓ
+int readInt() вЂ“ С‡РёС‚Р°РµС‚ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹ С‡РёСЃР»Рѕ
+double readDouble() вЂ“ С‡РёС‚Р°РµС‚ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹ РґСЂРѕР±РЅРѕРµ С‡РёСЃР»Рѕ
+boolean readBoolean() вЂ“ С‡РёС‚Р°РµС‚ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹ СЃС‚СЂРѕРєСѓ "true" РёР»Рё "false" Рё РІРѕР·РІСЂР°С‰Р°РµС‚ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰СѓСЋ Р»РѕРіРёС‡РµСЃРєСѓСЋ РїРµСЂРµРјРµРЅРЅСѓСЋ true РёР»Рё false
+Р’РЅРёРјР°РЅРёРµ: СЃРѕР·РґР°РІР°Р№С‚Рµ РїРµСЂРµРјРµРЅРЅСѓСЋ РґР»СЏ С‡С‚РµРЅРёСЏ РґР°РЅРЅС‹С… СЃ РєРѕРЅСЃРѕР»Рё (BufferedReader РёР»Рё Scanner) РІРЅСѓС‚СЂРё РєР°Р¶РґРѕРіРѕ РјРµС‚РѕРґР°
 */
 
 public class ConsoleReader
@@ -23,19 +23,19 @@ public class ConsoleReader
     public static int readInt() throws Exception
     {
        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        return Integer.parseInt(reader.readLine()); //напишите тут ваш код
+        return Integer.parseInt(reader.readLine()); //РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
 
     }
 
     public static double readDouble() throws Exception
     {
-       BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));//напишите тут ваш код
+       BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));//РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
 return Double.parseDouble(reader.readLine());
     }
 
     public static boolean readBoolean() throws Exception
     {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        return Boolean.parseBoolean(reader.readLine()); //напишите тут ваш код
+        return Boolean.parseBoolean(reader.readLine()); //РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
     }
 }

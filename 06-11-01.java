@@ -1,16 +1,16 @@
 package com.javarush.test.level06.lesson11.home01;
 
-/* Класс Cat и статическая переменная catCount
-В классе Cat создай статическую переменную public int catCount.
-Создай конструктор [public Cat()]. Пусть при каждом создании кота (нового объекта Cat) статическая переменная
-catCount увеличивается на 1. Создать 10 объектов Cat и вывести значение переменной catCount на экран.
+/* РљР»Р°СЃСЃ Cat Рё СЃС‚Р°С‚РёС‡РµСЃРєР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ catCount
+Р’ РєР»Р°СЃСЃРµ Cat СЃРѕР·РґР°Р№ СЃС‚Р°С‚РёС‡РµСЃРєСѓСЋ РїРµСЂРµРјРµРЅРЅСѓСЋ public int catCount.
+РЎРѕР·РґР°Р№ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ [public Cat()]. РџСѓСЃС‚СЊ РїСЂРё РєР°Р¶РґРѕРј СЃРѕР·РґР°РЅРёРё РєРѕС‚Р° (РЅРѕРІРѕРіРѕ РѕР±СЉРµРєС‚Р° Cat) СЃС‚Р°С‚РёС‡РµСЃРєР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ
+catCount СѓРІРµР»РёС‡РёРІР°РµС‚СЃСЏ РЅР° 1. РЎРѕР·РґР°С‚СЊ 10 РѕР±СЉРµРєС‚РѕРІ Cat Рё РІС‹РІРµСЃС‚Рё Р·РЅР°С‡РµРЅРёРµ РїРµСЂРµРјРµРЅРЅРѕР№ catCount РЅР° СЌРєСЂР°РЅ.
 */
 
 public class Solution
 {
     public static void main(String[] args)
     {
-        //Cоздай тут 10 объектов Cat
+        //CРѕР·РґР°Р№ С‚СѓС‚ 10 РѕР±СЉРµРєС‚РѕРІ Cat
 Cat cat1 = new Cat();
 Cat cat2 = new Cat();
 Cat cat3 = new Cat();
@@ -22,17 +22,17 @@ Cat cat8 = new Cat();
 Cat cat9 = new Cat();
 Cat cat10 = new Cat();
 
-        System.out.println(Cat.catCount); //Выведи тут на экран catCount
+        System.out.println(Cat.catCount); //Р’С‹РІРµРґРё С‚СѓС‚ РЅР° СЌРєСЂР°РЅ catCount
     }
 
     public static class Cat
     {
-       public  static int catCount = 0; //Cоздай тут статическую переменную
+       public  static int catCount = 0; //CРѕР·РґР°Р№ С‚СѓС‚ СЃС‚Р°С‚РёС‡РµСЃРєСѓСЋ РїРµСЂРµРјРµРЅРЅСѓСЋ
 
         public Cat()
         {
             Cat.catCount++;
-        }//Создай тут конструктор
+        }//РЎРѕР·РґР°Р№ С‚СѓС‚ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
     }
 
 }

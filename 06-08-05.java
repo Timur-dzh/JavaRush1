@@ -1,11 +1,11 @@
 package com.javarush.test.level06.lesson08.task05;
 
-/* Êëàññ StringHelper
-Cäåëàòü êëàññ StringHelper, ó êîòîðîãî áóäóò 2 ñòàòè÷åñêèõ ìåòîäà:
-String multiply(String s, int count) – âîçâðàùàåò ñòðîêó ïîâòîðåííóþ count ðàç.
-String multiply(String s) – âîçâðàùàåò ñòðîêó ïîâòîðåííóþ 5 ðàç.
-Ïðèìåð:
-Àìèãî -> ÀìèãîÀìèãîÀìèãîÀìèãîÀìèãî
+/* Â Ð»Ð°ÑÑ StringHelper
+CÐ´ÐµÐ»Ð°Ñ‚ÑŒ ÐºÐ»Ð°ÑÑ StringHelper, Ñƒ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ð±ÑƒÐ´ÑƒÑ‚ 2 ÑÑ‚Ð°Ñ‚Ð¸Ñ‡ÐµÑÐºÐ¸Ñ… Ð¼ÐµÑ‚Ð¾Ð´Ð°:
+String multiply(String s, int count) Ð¦ Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°ÐµÑ‚ ÑÑ‚Ñ€Ð¾ÐºÑƒ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÐµÐ½Ð½ÑƒÑŽ count Ñ€Ð°Ð·.
+String multiply(String s) Ð¦ Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°ÐµÑ‚ ÑÑ‚Ñ€Ð¾ÐºÑƒ Ð¿Ð¾Ð²Ñ‚Ð¾Ñ€ÐµÐ½Ð½ÑƒÑŽ 5 Ñ€Ð°Ð·.
+Ñ•Ñ€Ð¸Ð¼ÐµÑ€:
+Ñ˜Ð¼Ð¸Ð³Ð¾ -> Ñ˜Ð¼Ð¸Ð³Ð¾Ñ˜Ð¼Ð¸Ð³Ð¾Ñ˜Ð¼Ð¸Ð³Ð¾Ñ˜Ð¼Ð¸Ð³Ð¾Ñ˜Ð¼Ð¸Ð³Ð¾
 */
 
 public class StringHelper
@@ -13,14 +13,14 @@ public class StringHelper
     public static String multiply(String s)
     {
         String result = "";
-       for (int i = 0; i<5; i++) result += s; //íàïèøèòå òóò âàø êîä
+       for (int i = 0; i<5; i++) result += s; //Ð½Ð°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ Ñ‚ÑƒÑ‚ Ð²Ð°Ñˆ ÐºÐ¾Ð´
         return result;
     }
 
     public static String multiply(String s, int count)
     {
         String result = "";
-        for (int i = 0; i<count; i++) result += s;  //íàïèøèòå òóò âàø êîä
+        for (int i = 0; i<count; i++) result += s;  //Ð½Ð°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ Ñ‚ÑƒÑ‚ Ð²Ð°Ñˆ ÐºÐ¾Ð´
         return result;
     }
 }
