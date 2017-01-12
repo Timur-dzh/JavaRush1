@@ -2,10 +2,10 @@ package com.javarush.test.level18.lesson03.task01;
 
 import java.io.FileInputStream;
 import java.io.*;
-/* Максимальный байт
-Ввести с консоли имя файла
-Найти максимальный байт в файле, вывести его на экран.
-Закрыть поток ввода-вывода
+/* РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ Р±Р°Р№С‚
+Р’РІРµСЃС‚Рё СЃ РєРѕРЅСЃРѕР»Рё РёРјСЏ С„Р°Р№Р»Р°
+РќР°Р№С‚Рё РјР°РєСЃРёРјР°Р»СЊРЅС‹Р№ Р±Р°Р№С‚ РІ С„Р°Р№Р»Рµ, РІС‹РІРµСЃС‚Рё РµРіРѕ РЅР° СЌРєСЂР°РЅ.
+Р—Р°РєСЂС‹С‚СЊ РїРѕС‚РѕРє РІРІРѕРґР°-РІС‹РІРѕРґР°
 */
 
 public class Solution {
@@ -16,14 +16,14 @@ public class Solution {
         FileInputStream inputStream = new FileInputStream(fileName);
  int max = 0;
 
- while (inputStream.available() > 0) //пока остались непрочитанные байты
+ while (inputStream.available() > 0) //РїРѕРєР° РѕСЃС‚Р°Р»РёСЃСЊ РЅРµРїСЂРѕС‡РёС‚Р°РЅРЅС‹Рµ Р±Р°Р№С‚С‹
  {
-  int data = inputStream.read(); //прочитать очередной байт
-  if (max < data) max= data; //добавить его к общей сумме 
+  int data = inputStream.read(); //РїСЂРѕС‡РёС‚Р°С‚СЊ РѕС‡РµСЂРµРґРЅРѕР№ Р±Р°Р№С‚
+  if (max < data) max= data; //РґРѕР±Р°РІРёС‚СЊ РµРіРѕ Рє РѕР±С‰РµР№ СЃСѓРјРјРµ 
  }
- inputStream.close(); // закрываем поток
+ inputStream.close(); // Р·Р°РєСЂС‹РІР°РµРј РїРѕС‚РѕРє
 
- System.out.println(max); //выводим сумму на экран. 
+ System.out.println(max); //РІС‹РІРѕРґРёРј СЃСѓРјРјСѓ РЅР° СЌРєСЂР°РЅ. 
 }
     }
 

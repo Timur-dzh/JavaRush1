@@ -4,22 +4,22 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-/* Исправить ошибки
-Исправить функциональность в соответствии с требованиями
-Программа должна:
-1. переписать все байты одного файла в другой одним куском.
-2. закрывать потоки ввода-вывода
-Подсказка: 4 ошибки
+/* РСЃРїСЂР°РІРёС‚СЊ РѕС€РёР±РєРё
+РСЃРїСЂР°РІРёС‚СЊ С„СѓРЅРєС†РёРѕРЅР°Р»СЊРЅРѕСЃС‚СЊ РІ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё СЃ С‚СЂРµР±РѕРІР°РЅРёСЏРјРё
+РџСЂРѕРіСЂР°РјРјР° РґРѕР»Р¶РЅР°:
+1. РїРµСЂРµРїРёСЃР°С‚СЊ РІСЃРµ Р±Р°Р№С‚С‹ РѕРґРЅРѕРіРѕ С„Р°Р№Р»Р° РІ РґСЂСѓРіРѕР№ РѕРґРЅРёРј РєСѓСЃРєРѕРј.
+2. Р·Р°РєСЂС‹РІР°С‚СЊ РїРѕС‚РѕРєРё РІРІРѕРґР°-РІС‹РІРѕРґР°
+РџРѕРґСЃРєР°Р·РєР°: 4 РѕС€РёР±РєРё
 */
 
 public class Solution {
     public static void main(String[] args) throws IOException {
         FileInputStream inputStream = new FileInputStream("c:/data.txt");
-        // Создаем поток-записи-байт-в-файл
+        // РЎРѕР·РґР°РµРј РїРѕС‚РѕРє-Р·Р°РїРёСЃРё-Р±Р°Р№С‚-РІ-С„Р°Р№Р»
         FileOutputStream outputStream = new FileOutputStream("c:/result.txt");
 
         if (inputStream.available() > 0) {
-            //читаем весь файл одним куском
+            //С‡РёС‚Р°РµРј РІРµСЃСЊ С„Р°Р№Р» РѕРґРЅРёРј РєСѓСЃРєРѕРј
             byte[] buffer = new byte[inputStream.available()];
             int count = inputStream.read(buffer);
             outputStream.write(buffer, 0, count);

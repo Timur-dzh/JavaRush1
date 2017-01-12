@@ -1,8 +1,8 @@
 package com.javarush.test.level18.lesson08.task01;
 
 /* Wrapper (Decorator)
-Разберись, что делает программа
-Аналогично классу DecoratorRunnableImpl создай класс DecoratorMyRunnableImpl
+Р Р°Р·Р±РµСЂРёСЃСЊ, С‡С‚Рѕ РґРµР»Р°РµС‚ РїСЂРѕРіСЂР°РјРјР°
+РђРЅР°Р»РѕРіРёС‡РЅРѕ РєР»Р°СЃСЃСѓ DecoratorRunnableImpl СЃРѕР·РґР°Р№ РєР»Р°СЃСЃ DecoratorMyRunnableImpl
 */
 
 public class Solution {

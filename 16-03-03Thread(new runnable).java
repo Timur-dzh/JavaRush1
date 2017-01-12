@@ -3,8 +3,8 @@ package com.javarush.test.level16.lesson03.task03;
 import java.util.ArrayList;
 import java.util.List;
 
-/* Список и нити
-В методе main добавить в статический объект list 5 нитей SpecialThread - различных объектов.
+/* РЎРїРёСЃРѕРє Рё РЅРёС‚Рё
+Р’ РјРµС‚РѕРґРµ main РґРѕР±Р°РІРёС‚СЊ РІ СЃС‚Р°С‚РёС‡РµСЃРєРёР№ РѕР±СЉРµРєС‚ list 5 РЅРёС‚РµР№ SpecialThread - СЂР°Р·Р»РёС‡РЅС‹С… РѕР±СЉРµРєС‚РѕРІ.
 */
 
 public class Solution {
@@ -15,7 +15,7 @@ public class Solution {
         list.add(new Thread(new SpecialThread()));
         list.add(new Thread(new SpecialThread()));
         list.add(new Thread(new SpecialThread()));
-        list.add(new Thread(new SpecialThread()));//Add your code here - добавьте свой код тут
+        list.add(new Thread(new SpecialThread()));//Add your code here - РґРѕР±Р°РІСЊС‚Рµ СЃРІРѕР№ РєРѕРґ С‚СѓС‚
     }
 
     public static class SpecialThread implements Runnable {

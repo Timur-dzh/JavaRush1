@@ -1,20 +1,20 @@
 package com.javarush.test.level16.lesson07.task03;
 
 /* Big Ben clock
-1. Разберись, что делает программа.
-2. Реализуй логику метода printTime так, чтобы каждую секунду выдавалось время начиная с установленного в конструкторе
-Пример:
-В г. Лондон сейчас 23:59:58!
-В г. Лондон сейчас 23:59:59!
-В г. Лондон сейчас полночь!
-В г. Лондон сейчас 0:0:1!
+1. Р Р°Р·Р±РµСЂРёСЃСЊ, С‡С‚Рѕ РґРµР»Р°РµС‚ РїСЂРѕРіСЂР°РјРјР°.
+2. Р РµР°Р»РёР·СѓР№ Р»РѕРіРёРєСѓ РјРµС‚РѕРґР° printTime С‚Р°Рє, С‡С‚РѕР±С‹ РєР°Р¶РґСѓСЋ СЃРµРєСѓРЅРґСѓ РІС‹РґР°РІР°Р»РѕСЃСЊ РІСЂРµРјСЏ РЅР°С‡РёРЅР°СЏ СЃ СѓСЃС‚Р°РЅРѕРІР»РµРЅРЅРѕРіРѕ РІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂРµ
+РџСЂРёРјРµСЂ:
+Р’ Рі. Р›РѕРЅРґРѕРЅ СЃРµР№С‡Р°СЃ 23:59:58!
+Р’ Рі. Р›РѕРЅРґРѕРЅ СЃРµР№С‡Р°СЃ 23:59:59!
+Р’ Рі. Р›РѕРЅРґРѕРЅ СЃРµР№С‡Р°СЃ РїРѕР»РЅРѕС‡СЊ!
+Р’ Рі. Р›РѕРЅРґРѕРЅ СЃРµР№С‡Р°СЃ 0:0:1!
 */
 
 public class Solution {
     public static volatile boolean isStopped = false;
 
     public static void main(String[] args) throws InterruptedException {
-        Clock clock = new Clock("Лондон", 23, 59, 57);
+        Clock clock = new Clock("Р›РѕРЅРґРѕРЅ", 23, 59, 57);
         Thread.sleep(4000);
         isStopped = true;
         Thread.sleep(1000);
@@ -66,12 +66,12 @@ public class Solution {
                               }
                     }
             Thread.sleep(1000);
-           //add your code here - добавь код тут
+           //add your code here - РґРѕР±Р°РІСЊ РєРѕРґ С‚СѓС‚
 
             if (hours == 0 && minutes == 0 && seconds == 0) {
-                System.out.println(String.format("В г. %s сейчас полночь!", cityName));
+                System.out.println(String.format("Р’ Рі. %s СЃРµР№С‡Р°СЃ РїРѕР»РЅРѕС‡СЊ!", cityName));
             } else {
-                System.out.println(String.format("В г. %s сейчас %d:%d:%d!", cityName, hours, minutes, seconds));
+                System.out.println(String.format("Р’ Рі. %s СЃРµР№С‡Р°СЃ %d:%d:%d!", cityName, hours, minutes, seconds));
             }
         }
     }
