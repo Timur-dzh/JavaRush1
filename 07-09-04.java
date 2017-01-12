@@ -4,21 +4,21 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-/* Буква «р» и буква «л»
-1. Создай список слов, заполни его самостоятельно.
-2. Метод fix должен:
-2.1. удалять из списка строк все слова, содержащие букву «р»
-2.2. удваивать все слова содержащие букву «л».
-2.3. если слово содержит и букву «р» и букву «л», то оставить это слово без изменений.
-2.4. с другими словами ничего не делать.
-Пример:
-роза
-лира
-лоза
-Выходные данные:
-лира
-лоза
-лоза
+/* Р‘СѓРєРІР° В«СЂВ» Рё Р±СѓРєРІР° В«Р»В»
+1. РЎРѕР·РґР°Р№ СЃРїРёСЃРѕРє СЃР»РѕРІ, Р·Р°РїРѕР»РЅРё РµРіРѕ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕ.
+2. РњРµС‚РѕРґ fix РґРѕР»Р¶РµРЅ:
+2.1. СѓРґР°Р»СЏС‚СЊ РёР· СЃРїРёСЃРєР° СЃС‚СЂРѕРє РІСЃРµ СЃР»РѕРІР°, СЃРѕРґРµСЂР¶Р°С‰РёРµ Р±СѓРєРІСѓ В«СЂВ»
+2.2. СѓРґРІР°РёРІР°С‚СЊ РІСЃРµ СЃР»РѕРІР° СЃРѕРґРµСЂР¶Р°С‰РёРµ Р±СѓРєРІСѓ В«Р»В».
+2.3. РµСЃР»Рё СЃР»РѕРІРѕ СЃРѕРґРµСЂР¶РёС‚ Рё Р±СѓРєРІСѓ В«СЂВ» Рё Р±СѓРєРІСѓ В«Р»В», С‚Рѕ РѕСЃС‚Р°РІРёС‚СЊ СЌС‚Рѕ СЃР»РѕРІРѕ Р±РµР· РёР·РјРµРЅРµРЅРёР№.
+2.4. СЃ РґСЂСѓРіРёРјРё СЃР»РѕРІР°РјРё РЅРёС‡РµРіРѕ РЅРµ РґРµР»Р°С‚СЊ.
+РџСЂРёРјРµСЂ:
+СЂРѕР·Р°
+Р»РёСЂР°
+Р»РѕР·Р°
+Р’С‹С…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ:
+Р»РёСЂР°
+Р»РѕР·Р°
+Р»РѕР·Р°
 */
 
 public class Solution
@@ -28,9 +28,9 @@ public class Solution
         BufferedReader bis = new BufferedReader(new InputStreamReader(System.in));
 
         ArrayList<String> list = new ArrayList<String>();
-        list.add("роза"); //0
-        list.add("лира"); //1
-        list.add("лоза"); //2
+        list.add("СЂРѕР·Р°"); //0
+        list.add("Р»РёСЂР°"); //1
+        list.add("Р»РѕР·Р°"); //2
         list = fix(list);
 
         for (String s : list)
@@ -41,11 +41,11 @@ public class Solution
 
     public static ArrayList<String> fix(ArrayList<String> list)
     {
-        //напишите тут ваш код
+        //РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
         for (int i = 0; i <list.size(); i++){
-     if (list.get(i).contains("р") && list.get(i).contains("л")) ;
-     else if (list.get(i).contains("р")) list.remove(i);
-     else if (list.get(i).contains("л")) {list.add(i, list.get(i)); i++;}
+     if (list.get(i).contains("СЂ") && list.get(i).contains("Р»")) ;
+     else if (list.get(i).contains("СЂ")) list.remove(i);
+     else if (list.get(i).contains("Р»")) {list.add(i, list.get(i)); i++;}
 }     
 return list;
     }

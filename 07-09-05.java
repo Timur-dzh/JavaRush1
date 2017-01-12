@@ -4,10 +4,10 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-/* Удвой слова
-1. Введи с клавиатуры 10 слов в список строк.
-2. Метод doubleValues должен удваивать слова по принципу a,b,c -> a,a,b,b,c,c.
-3. Используя цикл for выведи результат на экран, каждое значение с новой строки.
+/* вЂќРґРІРѕР№ СЃР»РѕРІР°
+1. В¬РІРµРґРё СЃ РєР»Р°РІРёР°С‚СѓСЂС‹ 10 СЃР»РѕРІ РІ СЃРїРёСЃРѕРє СЃС‚СЂРѕРє.
+2. С›РµС‚РѕРґ doubleValues РґРѕР»Р¶РµРЅ СѓРґРІР°РёРІР°С‚СЊ СЃР»РѕРІР° РїРѕ РїСЂРёРЅС†РёРїСѓ a,b,c -> a,a,b,b,c,c.
+3. В»СЃРїРѕР»СЊР·СѓВ¤ С†РёРєР» for РІС‹РІРµРґРё СЂРµР·СѓР»СЊС‚Р°С‚ РЅР° СЌРєСЂР°РЅ, РєР°Р¶РґРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃ РЅРѕРІРѕР№ СЃС‚СЂРѕРєРё.
 */
 
 public class Solution
@@ -16,16 +16,16 @@ public class Solution
     {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<String> list = new ArrayList<String>();
-        for (int i = 0; i<10; i++) list.add(br.readLine());//Считать строки с консоли и объявить ArrayList list тут
+        for (int i = 0; i<10; i++) list.add(br.readLine());//вЂ”С‡РёС‚Р°С‚СЊ СЃС‚СЂРѕРєРё СЃ РєРѕРЅСЃРѕР»Рё Рё РѕР±СЉВ¤РІРёС‚СЊ ArrayList list С‚СѓС‚
 
         ArrayList<String> result = doubleValues(list);
 
-       for (int i=0; i<result.size(); i++) System.out.println(result.get(i)); //Вывести на экран result
+       for (int i=0; i<result.size(); i++) System.out.println(result.get(i)); //В¬С‹РІРµСЃС‚Рё РЅР° СЌРєСЂР°РЅ result
     }
 
     public static ArrayList<String> doubleValues(ArrayList<String> list)
     {
-        for (int i=0; i < list.size(); i+=2) list.add(i, list.get(i));//напишите тут ваш код
+        for (int i=0; i < list.size(); i+=2) list.add(i, list.get(i));//РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
         return list;
     }
 }

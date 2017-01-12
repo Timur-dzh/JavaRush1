@@ -1,29 +1,29 @@
 package com.javarush.test.level07.lesson12.home06;
 
-/* Семья
-Создай класс Human с полями имя(String), пол(boolean),возраст(int), отец(Human), мать(Human). Создай объекты и заполни их так, чтобы получилось: Два дедушки, две бабушки, отец, мать, трое детей. Вывести объекты на экран.
-Примечание:
-Если написать свой метод String toString() в классе Human, то именно он будет использоваться при выводе объекта на экран.
-Пример вывода:
-Имя: Аня, пол: женский, возраст: 21, отец: Павел, мать: Катя
-Имя: Катя, пол: женский, возраст: 55
-Имя: Игорь, пол: мужской, возраст: 2, отец: Михаил, мать: Аня
-…
+/* РЎРµРјСЊСЏ
+РЎРѕР·РґР°Р№ РєР»Р°СЃСЃ Human СЃ РїРѕР»СЏРјРё РёРјСЏ(String), РїРѕР»(boolean),РІРѕР·СЂР°СЃС‚(int), РѕС‚РµС†(Human), РјР°С‚СЊ(Human). РЎРѕР·РґР°Р№ РѕР±СЉРµРєС‚С‹ Рё Р·Р°РїРѕР»РЅРё РёС… С‚Р°Рє, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёР»РѕСЃСЊ: Р”РІР° РґРµРґСѓС€РєРё, РґРІРµ Р±Р°Р±СѓС€РєРё, РѕС‚РµС†, РјР°С‚СЊ, С‚СЂРѕРµ РґРµС‚РµР№. Р’С‹РІРµСЃС‚Рё РѕР±СЉРµРєС‚С‹ РЅР° СЌРєСЂР°РЅ.
+РџСЂРёРјРµС‡Р°РЅРёРµ:
+Р•СЃР»Рё РЅР°РїРёСЃР°С‚СЊ СЃРІРѕР№ РјРµС‚РѕРґ String toString() РІ РєР»Р°СЃСЃРµ Human, С‚Рѕ РёРјРµРЅРЅРѕ РѕРЅ Р±СѓРґРµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РїСЂРё РІС‹РІРѕРґРµ РѕР±СЉРµРєС‚Р° РЅР° СЌРєСЂР°РЅ.
+РџСЂРёРјРµСЂ РІС‹РІРѕРґР°:
+РРјСЏ: РђРЅСЏ, РїРѕР»: Р¶РµРЅСЃРєРёР№, РІРѕР·СЂР°СЃС‚: 21, РѕС‚РµС†: РџР°РІРµР», РјР°С‚СЊ: РљР°С‚СЏ
+РРјСЏ: РљР°С‚СЏ, РїРѕР»: Р¶РµРЅСЃРєРёР№, РІРѕР·СЂР°СЃС‚: 55
+РРјСЏ: РРіРѕСЂСЊ, РїРѕР»: РјСѓР¶СЃРєРѕР№, РІРѕР·СЂР°СЃС‚: 2, РѕС‚РµС†: РњРёС…Р°РёР», РјР°С‚СЊ: РђРЅСЏ
+вЂ¦
 */
 
 public class Solution
 {
     public static void main(String[] args)
     {
-        Human Olya = new Human("Ольга", false, 80  );
-        Human Kolya = new Human("Николай", true, 82);
-        Human Masha = new Human("Мария", false, 79);
-        Human Pasha = new Human("Павел", true, 80);
-        Human Katya = new Human("Екатерина", false, 50, Kolya, Olya);
-        Human Oleg = new Human("Олег", true, 49, Pasha, Masha);
-        Human Anya = new Human("Аня", false, 21, Oleg, Katya);
-        Human Sanya = new Human("Александр", true, 20, Oleg, Katya);
-        Human Vanya = new Human("Иван", true, 19, Oleg, Katya);
+        Human Olya = new Human("РћР»СЊРіР°", false, 80  );
+        Human Kolya = new Human("РќРёРєРѕР»Р°Р№", true, 82);
+        Human Masha = new Human("РњР°СЂРёСЏ", false, 79);
+        Human Pasha = new Human("РџР°РІРµР»", true, 80);
+        Human Katya = new Human("Р•РєР°С‚РµСЂРёРЅР°", false, 50, Kolya, Olya);
+        Human Oleg = new Human("РћР»РµРі", true, 49, Pasha, Masha);
+        Human Anya = new Human("РђРЅСЏ", false, 21, Oleg, Katya);
+        Human Sanya = new Human("РђР»РµРєСЃР°РЅРґСЂ", true, 20, Oleg, Katya);
+        Human Vanya = new Human("РРІР°РЅ", true, 19, Oleg, Katya);
         System.out.println(Olya.toString());
         System.out.println(Kolya.toString());
         System.out.println(Masha.toString());
@@ -42,7 +42,7 @@ public class Solution
         int age;
         String father;
         String mother;
-        //Написать тут ваш код
+        //РќР°РїРёСЃР°С‚СЊ С‚СѓС‚ РІР°С€ РєРѕРґ
 
         public Human( String name, Boolean sex,int age)
         {
@@ -65,15 +65,15 @@ public class Solution
         {
 
             String text = "";
-            text += "Имя: " + this.name;
-            text += ", пол: " + (this.sex ? "мужской" : "женский");
-            text += ", возраст: " + this.age;
+            text += "РРјСЏ: " + this.name;
+            text += ", РїРѕР»: " + (this.sex ? "РјСѓР¶СЃРєРѕР№" : "Р¶РµРЅСЃРєРёР№");
+            text += ", РІРѕР·СЂР°СЃС‚: " + this.age;
 
             if (this.father != null)
-                text += ", отец: " + this.father;
+                text += ", РѕС‚РµС†: " + this.father;
 
             if (this.mother != null)
-                text += ", мать: " + this.mother;
+                text += ", РјР°С‚СЊ: " + this.mother;
 
             return text;
         }

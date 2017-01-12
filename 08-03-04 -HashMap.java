@@ -3,8 +3,8 @@ package com.javarush.test.level08.lesson03.task04;
 import java.util.HashMap;
 import java.util.Map;
 
-/* Вывести на экран список ключей
-Есть коллекция HashMap<String, String>, туда занесли 10 различных строк. Вывести на экран список ключей, каждый элемент с новой строки.
+/* Р’С‹РІРµСЃС‚Рё РЅР° СЌРєСЂР°РЅ СЃРїРёСЃРѕРє РєР»СЋС‡РµР№
+Р•СЃС‚СЊ РєРѕР»Р»РµРєС†РёСЏ HashMap<String, String>, С‚СѓРґР° Р·Р°РЅРµСЃР»Рё 10 СЂР°Р·Р»РёС‡РЅС‹С… СЃС‚СЂРѕРє. Р’С‹РІРµСЃС‚Рё РЅР° СЌРєСЂР°РЅ СЃРїРёСЃРѕРє РєР»СЋС‡РµР№, РєР°Р¶РґС‹Р№ СЌР»РµРјРµРЅС‚ СЃ РЅРѕРІРѕР№ СЃС‚СЂРѕРєРё.
 */
 
 public class Solution
@@ -30,9 +30,9 @@ public class Solution
     {
        for (Map.Entry<String, String> pair : map.entrySet())
     {
-        String key = pair.getKey();                      //ключ
-        //String value = pair.getValue();                  //значение
+        String key = pair.getKey();                      //РєР»СЋС‡
+        //String value = pair.getValue();                  //Р·РЅР°С‡РµРЅРёРµ
         System.out.println(key /*+ ":" + value*/);
-    } //напишите тут ваш код
+    } //РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
     }
 }

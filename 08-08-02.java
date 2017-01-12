@@ -4,9 +4,9 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.Iterator;
 
-/* Удалить все числа больше 10
-Создать множество чисел(Set<Integer>), занести туда 20 различных чисел.
-Удалить из множества все числа больше 10.
+/* вЂќРґР°Р»РёС‚СЊ РІСЃРµ С‡РёСЃР»Р° Р±РѕР»СЊС€Рµ 10
+вЂ”РѕР·РґР°С‚СЊ РјРЅРѕР¶РµСЃС‚РІРѕ С‡РёСЃРµР»(Set<Integer>), Р·Р°РЅРµСЃС‚Рё С‚СѓРґР° 20 СЂР°Р·Р»РёС‡РЅС‹С… С‡РёСЃРµР».
+вЂќРґР°Р»РёС‚СЊ РёР· РјРЅРѕР¶РµСЃС‚РІР° РІСЃРµ С‡РёСЃР»Р° Р±РѕР»СЊС€Рµ 10.
 */
 
 public class Solution
@@ -40,11 +40,11 @@ public class Solution
 
     public static HashSet<Integer> removeAllNumbersMoreThan10(HashSet<Integer> set)
     {
-         Iterator<Integer> iterator = set.iterator();//получение итератора для списка
+         Iterator<Integer> iterator = set.iterator();//РїРѕР»СѓС‡РµРЅРёРµ РёС‚РµСЂР°С‚РѕСЂР° РґР»В¤ СЃРїРёСЃРєР°
 
-    while (iterator.hasNext())      //проверка, есть ли ещё элементы   
+    while (iterator.hasNext())      //РїСЂРѕРІРµСЂРєР°, РµСЃС‚СЊ Р»Рё РµС‰Р„ СЌР»РµРјРµРЅС‚С‹   
     {
-        //получение текущего элемента и переход на следующий
+        //РїРѕР»СѓС‡РµРЅРёРµ С‚РµРєСѓС‰РµРіРѕ СЌР»РµРјРµРЅС‚Р° Рё РїРµСЂРµС…РѕРґ РЅР° СЃР»РµРґСѓСЋС‰РёР№
         Integer text = iterator.next();
 
         if(text > 10) iterator.remove();

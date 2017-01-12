@@ -5,11 +5,11 @@ import com.javarush.test.level06.lesson11.home02.Cat;
 import java.util.HashSet;
 import java.util.*;
 
-/* Set из котов
-1. Внутри класса Solution создать public static класс кот – Cat.
-2. Реализовать метод createCats, он должен создавать множество (Set) котов и добавлять в него 3 кота.
-3. В методе main удалите одного кота из Set cats.
-4. Реализовать метод printCats, он должен вывести на экран всех котов, которые остались во множестве. Каждый кот с новой строки.
+/* Set РёР· РєРѕС‚РѕРІ
+1. Р’РЅСѓС‚СЂРё РєР»Р°СЃСЃР° Solution СЃРѕР·РґР°С‚СЊ public static РєР»Р°СЃСЃ РєРѕС‚ вЂ“ Cat.
+2. Р РµР°Р»РёР·РѕРІР°С‚СЊ РјРµС‚РѕРґ createCats, РѕРЅ РґРѕР»Р¶РµРЅ СЃРѕР·РґР°РІР°С‚СЊ РјРЅРѕР¶РµСЃС‚РІРѕ (Set) РєРѕС‚РѕРІ Рё РґРѕР±Р°РІР»СЏС‚СЊ РІ РЅРµРіРѕ 3 РєРѕС‚Р°.
+3. Р’ РјРµС‚РѕРґРµ main СѓРґР°Р»РёС‚Рµ РѕРґРЅРѕРіРѕ РєРѕС‚Р° РёР· Set cats.
+4. Р РµР°Р»РёР·РѕРІР°С‚СЊ РјРµС‚РѕРґ printCats, РѕРЅ РґРѕР»Р¶РµРЅ РІС‹РІРµСЃС‚Рё РЅР° СЌРєСЂР°РЅ РІСЃРµС… РєРѕС‚РѕРІ, РєРѕС‚РѕСЂС‹Рµ РѕСЃС‚Р°Р»РёСЃСЊ РІРѕ РјРЅРѕР¶РµСЃС‚РІРµ. РљР°Р¶РґС‹Р№ РєРѕС‚ СЃ РЅРѕРІРѕР№ СЃС‚СЂРѕРєРё.
 */
 
 public class Solution
@@ -19,7 +19,7 @@ public class Solution
         Set<Cat> cats = createCats();
 
         Iterator iterator = cats.iterator();
-        cats.remove(iterator.next()); //напишите тут ваш код. пункт 3
+        cats.remove(iterator.next()); //РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ. РїСѓРЅРєС‚ 3
 
         printCats(cats);
     }
@@ -37,7 +37,7 @@ public class Solution
         /*  cats.add(new Cat("cat1"));
         cats.add(new Cat("cat2"));
         cats.add(new Cat("cat3")); */
-        //напишите тут ваш код. пункт 2
+        //РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ. РїСѓРЅРєС‚ 2
         return cats;
     }
 
@@ -46,7 +46,7 @@ public class Solution
         for (Cat p : cats)
         {
             System.out.println(p);
-        }// пункт 4
+        }// РїСѓРЅРєС‚ 4
     }
 
     public static class Cat
@@ -55,6 +55,6 @@ public class Solution
         public Cat(String name){
             this.catName = name;
         }
-        // пункт 1
+        // РїСѓРЅРєС‚ 1
     }
 }

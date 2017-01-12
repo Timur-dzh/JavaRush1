@@ -3,10 +3,10 @@ package com.javarush.test.level08.lesson03.task06;
 import java.util.HashMap;
 import java.util.Map;
 
-/* Коллекция HashMap из Object
-Есть коллекция HashMap<String, Object>, туда занесли 10 различных пар объектов.
-Вывести содержимое коллекции на экран, каждый элемент с новой строки.
-Пример вывода (тут показана только одна строка):
+/* РљРѕР»Р»РµРєС†РёСЏ HashMap РёР· Object
+Р•СЃС‚СЊ РєРѕР»Р»РµРєС†РёСЏ HashMap<String, Object>, С‚СѓРґР° Р·Р°РЅРµСЃР»Рё 10 СЂР°Р·Р»РёС‡РЅС‹С… РїР°СЂ РѕР±СЉРµРєС‚РѕРІ.
+Р’С‹РІРµСЃС‚Рё СЃРѕРґРµСЂР¶РёРјРѕРµ РєРѕР»Р»РµРєС†РёРё РЅР° СЌРєСЂР°РЅ, РєР°Р¶РґС‹Р№ СЌР»РµРјРµРЅС‚ СЃ РЅРѕРІРѕР№ СЃС‚СЂРѕРєРё.
+РџСЂРёРјРµСЂ РІС‹РІРѕРґР° (С‚СѓС‚ РїРѕРєР°Р·Р°РЅР° С‚РѕР»СЊРєРѕ РѕРґРЅР° СЃС‚СЂРѕРєР°):
 Sim - 5
 */
 
@@ -28,10 +28,10 @@ public class Solution
 
         for (Map.Entry<String, Object> pair : map.entrySet())
     {
-        String key = pair.getKey();                      //ключ
-        Object value = pair.getValue();                  //значение
+        String key = pair.getKey();                      //РєР»СЋС‡
+        Object value = pair.getValue();                  //Р·РЅР°С‡РµРЅРёРµ
         System.out.println(key + " - " + value);
-    }//напишите тут ваш код
+    }//РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
 
     }
 }
