@@ -1,9 +1,9 @@
 package com.javarush.test.level12.lesson12.home04;
 
-/* Что это? «Кот», «Тигр», «Лев», «Бык», «хз»
-Напиши метод, который определяет, какой объект передали в него.
-Программа должна выводить на экран одну из надписей:
-«Кот», «Тигр», «Лев», «Бык», «хз».
+/* Р§С‚Рѕ СЌС‚Рѕ? В«РљРѕС‚В», В«РўРёРіСЂВ», В«Р›РµРІВ», В«Р‘С‹РєВ», В«С…Р·В»
+РќР°РїРёС€Рё РјРµС‚РѕРґ, РєРѕС‚РѕСЂС‹Р№ РѕРїСЂРµРґРµР»СЏРµС‚, РєР°РєРѕР№ РѕР±СЉРµРєС‚ РїРµСЂРµРґР°Р»Рё РІ РЅРµРіРѕ.
+РџСЂРѕРіСЂР°РјРјР° РґРѕР»Р¶РЅР° РІС‹РІРѕРґРёС‚СЊ РЅР° СЌРєСЂР°РЅ РѕРґРЅСѓ РёР· РЅР°РґРїРёСЃРµР№:
+В«РљРѕС‚В», В«РўРёРіСЂВ», В«Р›РµРІВ», В«Р‘С‹РєВ», В«С…Р·В».
 */
 
 public class Solution
@@ -19,12 +19,12 @@ public class Solution
 
     public static String getObjectType(Object o)
     {
-        if (o instanceof  Cat) return "Кот";//напишите тут ваш код
-        if (o instanceof  Tiger) return "Тигр";
-        if (o instanceof  Lion) return "Лев";
-        if (o instanceof  Bull) return "Бык";
-        if (o instanceof  Pig) return "хз";
-       return "хз";
+        if (o instanceof  Cat) return "РљРѕС‚";//РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
+        if (o instanceof  Tiger) return "РўРёРіСЂ";
+        if (o instanceof  Lion) return "Р›РµРІ";
+        if (o instanceof  Bull) return "Р‘С‹Рє";
+        if (o instanceof  Pig) return "С…Р·";
+       return "С…Р·";
     }
 
     public static class Cat

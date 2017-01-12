@@ -1,8 +1,8 @@
 package com.javarush.test.level12.lesson06.task05;
 
-/* Классы Cat и Dog от Pet
-Унаследуй классы Cat и Dog от Pet.
-Реализуй недостающие методы. Классы Cat и Dog не должны быть абстрактными.
+/* В Р»Р°СЃСЃС‹ Cat Рё Dog РѕС‚ Pet
+вЂќРЅР°СЃР»РµРґСѓР№ РєР»Р°СЃСЃС‹ Cat Рё Dog РѕС‚ Pet.
+вЂ“РµР°Р»РёР·СѓР№ РЅРµРґРѕСЃС‚Р°СЋС‰РёРµ РјРµС‚РѕРґС‹. В Р»Р°СЃСЃС‹ Cat Рё Dog РЅРµ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ Р°Р±СЃС‚СЂР°РєС‚РЅС‹РјРё.
 */
 
 public class Solution
@@ -22,7 +22,7 @@ public class Solution
     {
 public  String getName()
 {
-    return "Кошка";
+    return "В РѕС€РєР°";
 }
 public  Cat getChild()
 {
@@ -34,7 +34,7 @@ public  Cat getChild()
     {
 public  String getName()
 {
-    return "Пес";
+    return "С•РµСЃ";
 }
 
 public  Dog getChild()

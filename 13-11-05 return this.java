@@ -1,10 +1,10 @@
 package com.javarush.test.level13.lesson11.home05;
 
 /* Neo
-1. Реализовать интерфейс DBObject в классе User.
-2. Реализовать метод initializeIdAndName так, чтобы программа работала и выводила на экран "User has name Neo, id = 1".
-3. Метод toString и метод main менять нельзя.
-4. Подумай, что должен возвращать метод initializeIdAndName в классе User.
+1. Р РµР°Р»РёР·РѕРІР°С‚СЊ РёРЅС‚РµСЂС„РµР№СЃ DBObject РІ РєР»Р°СЃСЃРµ User.
+2. Р РµР°Р»РёР·РѕРІР°С‚СЊ РјРµС‚РѕРґ initializeIdAndName С‚Р°Рє, С‡С‚РѕР±С‹ РїСЂРѕРіСЂР°РјРјР° СЂР°Р±РѕС‚Р°Р»Р° Рё РІС‹РІРѕРґРёР»Р° РЅР° СЌРєСЂР°РЅ "User has name Neo, id = 1".
+3. РњРµС‚РѕРґ toString Рё РјРµС‚РѕРґ main РјРµРЅСЏС‚СЊ РЅРµР»СЊР·СЏ.
+4. РџРѕРґСѓРјР°Р№, С‡С‚Рѕ РґРѕР»Р¶РµРЅ РІРѕР·РІСЂР°С‰Р°С‚СЊ РјРµС‚РѕРґ initializeIdAndName РІ РєР»Р°СЃСЃРµ User.
 */
 
 public class Solution

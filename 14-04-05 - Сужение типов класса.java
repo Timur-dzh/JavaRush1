@@ -4,10 +4,10 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /* Player and Dancer
-1. Подумать, что делает программа.
-2. Изменить метод haveRest так, чтобы он вызывал метод
-- play, если person имеет тип Player
-- dance, если person имеет тип Dancer
+1. РџРѕРґСѓРјР°С‚СЊ, С‡С‚Рѕ РґРµР»Р°РµС‚ РїСЂРѕРіСЂР°РјРјР°.
+2. РР·РјРµРЅРёС‚СЊ РјРµС‚РѕРґ haveRest С‚Р°Рє, С‡С‚РѕР±С‹ РѕРЅ РІС‹Р·С‹РІР°Р» РјРµС‚РѕРґ
+- play, РµСЃР»Рё person РёРјРµРµС‚ С‚РёРї Player
+- dance, РµСЃР»Рё person РёРјРµРµС‚ С‚РёРї Dancer
 */
 
 public class Solution

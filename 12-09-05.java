@@ -1,10 +1,10 @@
 package com.javarush.test.level12.lesson09.task05;
 
-/* Класс Human и интерфейсы Run, Swim
-Напиши public класс Human(человек) и  public интерфейсы Run(бежать/ездить), Swim(плавать).
-Добавь в каждый интерфейс по одному методу.
-Добавь эти интерфейсы классу Human, но не реализуй методы.
-Объяви класс Human абстрактным.
+/* РљР»Р°СЃСЃ Human Рё РёРЅС‚РµСЂС„РµР№СЃС‹ Run, Swim
+РќР°РїРёС€Рё public РєР»Р°СЃСЃ Human(С‡РµР»РѕРІРµРє) Рё  public РёРЅС‚РµСЂС„РµР№СЃС‹ Run(Р±РµР¶Р°С‚СЊ/РµР·РґРёС‚СЊ), Swim(РїР»Р°РІР°С‚СЊ).
+Р”РѕР±Р°РІСЊ РІ РєР°Р¶РґС‹Р№ РёРЅС‚РµСЂС„РµР№СЃ РїРѕ РѕРґРЅРѕРјСѓ РјРµС‚РѕРґСѓ.
+Р”РѕР±Р°РІСЊ СЌС‚Рё РёРЅС‚РµСЂС„РµР№СЃС‹ РєР»Р°СЃСЃСѓ Human, РЅРѕ РЅРµ СЂРµР°Р»РёР·СѓР№ РјРµС‚РѕРґС‹.
+РћР±СЉСЏРІРё РєР»Р°СЃСЃ Human Р°Р±СЃС‚СЂР°РєС‚РЅС‹Рј.
 */
 
 public class Solution
@@ -21,7 +21,7 @@ public class Solution
  public interface Swim
   {
       void swim();
-  }//add public interfaces and public class here - добавь public интерфейсы и public класс тут
+  }//add public interfaces and public class here - РґРѕР±Р°РІСЊ public РёРЅС‚РµСЂС„РµР№СЃС‹ Рё public РєР»Р°СЃСЃ С‚СѓС‚
 public abstract  class  Human implements Run, Swim
   {
      

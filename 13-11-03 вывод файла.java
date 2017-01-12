@@ -1,9 +1,9 @@
 package com.javarush.test.level13.lesson11.home03;
 import java.io.*;
-/* Чтение файла
-1. Считать с консоли имя файла.
-2. Вывести в консоль(на экран) содержимое файла.
-3. Не забыть освободить ресурсы. Закрыть поток чтения с файла и поток ввода с клавиатуры.
+/* Р§С‚РµРЅРёРµ С„Р°Р№Р»Р°
+1. РЎС‡РёС‚Р°С‚СЊ СЃ РєРѕРЅСЃРѕР»Рё РёРјСЏ С„Р°Р№Р»Р°.
+2. Р’С‹РІРµСЃС‚Рё РІ РєРѕРЅСЃРѕР»СЊ(РЅР° СЌРєСЂР°РЅ) СЃРѕРґРµСЂР¶РёРјРѕРµ С„Р°Р№Р»Р°.
+3. РќРµ Р·Р°Р±С‹С‚СЊ РѕСЃРІРѕР±РѕРґРёС‚СЊ СЂРµСЃСѓСЂСЃС‹. Р—Р°РєСЂС‹С‚СЊ РїРѕС‚РѕРє С‡С‚РµРЅРёСЏ СЃ С„Р°Р№Р»Р° Рё РїРѕС‚РѕРє РІРІРѕРґР° СЃ РєР»Р°РІРёР°С‚СѓСЂС‹.
 */
 
 public class Solution
@@ -12,7 +12,7 @@ public class Solution
     {
         String fileName;
         BufferedReader reader  = new BufferedReader(new InputStreamReader(System.in));
-      // System.out.print("Введите имя файла:");
+      // System.out.print("Р’РІРµРґРёС‚Рµ РёРјСЏ С„Р°Р№Р»Р°:");
         fileName = reader.readLine();
 
         InputStream in = new FileInputStream(fileName);
@@ -23,7 +23,7 @@ public class Solution
             System.out.print((char)in.read());
         }
 
-        in.close(); //закрываем потоки
+        in.close(); //Р·Р°РєСЂС‹РІР°РµРј РїРѕС‚РѕРєРё
         reader.close();
 
     }
