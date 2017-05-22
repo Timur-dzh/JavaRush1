@@ -8,19 +8,16 @@ import java.io.InputStreamReader;
 
 public class Solution
 {
-    public static void main(String[] args) throws Exception
-    {
+    public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int sum = 0;
         int i = 0;
         String s = null;
 
-        while (s!="sum")
-        {
+        while (s!="sum"){
             s = br.readLine();
-            if(s.equals("сумма"))
-            {
+            if(s.equals("сумма")){
                 break;
             }
                 i = Integer.parseInt(s);
@@ -32,4 +29,3 @@ public class Solution
     }
     //напишите тут ваш код
 }
-
